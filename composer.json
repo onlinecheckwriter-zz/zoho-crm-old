@@ -1,0 +1,31 @@
+{
+    "name": "onlinecheckwriter/zoho-crm-old",
+    "keywords": ["ocw"],
+    "license": "MIT",
+    "authors": [
+     
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/console": "^5.4.0|^6.0",
+        "illuminate/support": "^5.4.0|^6.0",
+        "zohocrm/php-sdk-archive": "2.0.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zoho\\CRM\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zoho\\CRM\\ZohoCRMServiceProvider"
+            ],
+            "aliases": {
+                "ZohoCRM": "Zoho\\CRM\\Facades\\ZohoCRM"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
